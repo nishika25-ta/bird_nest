@@ -79,6 +79,18 @@
   object-fit: cover;
 }
 
+@media (max-width: 768px) {
+  .carousel-item-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item-image {
+    height: 250px;
+  }
+}
+
 .carousel-icon-container {
   display: flex;
   height: 28px;
@@ -142,3 +154,11 @@
 .carousel-indicator.inactive {
   background-color: #ddd;
 }
+
+@media (max-width: 768px) {
+  .carousel-indicator {
+    height: 6px;
+    width: 6px;
+  }
+}
+

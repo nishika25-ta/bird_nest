@@ -229,13 +229,13 @@ export default function Carousel({
   };
 
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <button
-        onClick={handlePrev}
+    <div className="relative w-full flex items-center justify-center group">
+      <button 
+        onClick={handlePrev} 
         disabled={!loop && position === 0}
-        className="absolute left-0 z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.1)] text-gray-800 disabled:opacity-0 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
+        className="absolute left-2 md:left-0 z-10 flex items-center justify-center w-8 h-8 md:w-12 md:h-12 bg-white/90 backdrop-blur rounded-full shadow-lg text-gray-800 disabled:opacity-0 hover:bg-white transition-all duration-300 transform hover:scale-105"
       >
-        <FiChevronLeft size={28} />
+        <FiChevronLeft className="w-5 h-5 md:w-7 md:h-7" />
       </button>
 
       <div
@@ -244,6 +244,7 @@ export default function Carousel({
         style={{
           width: `${baseWidth}px`,
           maxWidth: '100%',
+          padding: window.innerWidth < 768 ? '8px' : '16px',
           ...(round && { height: `${baseWidth}px`, borderRadius: '50%' })
         }}
       >
@@ -297,9 +298,9 @@ export default function Carousel({
       <button
         onClick={handleNext}
         disabled={!loop && position === itemsForRender.length - 1}
-        className="absolute right-0 z-10 flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.1)] text-gray-800 disabled:opacity-0 hover:bg-gray-50 transition-all duration-300 transform hover:scale-105"
+        className="absolute right-2 md:right-0 z-10 flex items-center justify-center w-8 h-8 md:w-12 md:h-12 bg-white/90 backdrop-blur rounded-full shadow-lg text-gray-800 disabled:opacity-0 hover:bg-white transition-all duration-300 transform hover:scale-105"
       >
-        <FiChevronRight size={28} />
+        <FiChevronRight className="w-5 h-5 md:w-7 md:h-7" />
       </button>
     </div>
   );

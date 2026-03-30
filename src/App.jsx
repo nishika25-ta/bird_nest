@@ -173,17 +173,33 @@ const globalStyles = `
 
   /* Typography / Utilities */
   .section-padding { padding: 8rem 2rem; }
+  @media (max-width: 768px) {
+    .section-padding { padding: 4rem 1.5rem; }
+  }
+
   .apple-hero-text {
     font-size: clamp(3rem, 10vw, 8rem);
     font-weight: 700;
     letter-spacing: -0.04em;
     line-height: 1.05;
   }
+  @media (max-width: 640px) {
+    .apple-hero-text {
+      font-size: 2.8rem;
+      line-height: 1.1;
+    }
+  }
+
   .apple-sub-text {
     font-size: clamp(1.2rem, 3vw, 1.8rem);
     font-weight: 400;
     color: #86868B;
     letter-spacing: 0.01em;
+  }
+  @media (max-width: 640px) {
+    .apple-sub-text {
+      font-size: 1.1rem;
+    }
   }
 `;
 
