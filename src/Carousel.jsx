@@ -6,35 +6,35 @@ import './Carousel.css';
 const DEFAULT_ITEMS = [
   {
     title: 'Bird Nest Drink',
-    description: 'Provide an image URL below to preview.',
+    description: '',
     id: 1,
     image: 'pro1.jpeg', // Mockup image to guide the user
     icon: <FiImage className="carousel-icon" />
   },
   {
     title: 'Bird Nest Solid',
-    description: 'Provide an image URL below to preview.',
+    description: '',
     id: 2,
     image: 'pro2.jpeg',
     icon: <FiImage className="carousel-icon" />
   },
   {
     title: 'Bird Nest Soup',
-    description: 'Provide an image URL below to preview.',
+    description: '',
     id: 3,
     image: 'pro3.jpeg',
     icon: <FiImage className="carousel-icon" />
   },
   {
     title: 'Bird Nest Skin Care',
-    description: 'Provide an image URL below to preview.',
+    description: '',
     id: 4,
     image: 'pro4.jpeg',
     icon: <FiImage className="carousel-icon" />
   },
   {
     title: 'Bird Nest Tea',
-    description: 'Provide an image URL below to preview.',
+    description: '',
     id: 5,
     image: 'pro5.jpeg',
     icon: <FiImage className="carousel-icon" />
